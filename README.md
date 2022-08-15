@@ -1,12 +1,29 @@
 # Tech_Developer_Digital_House_Bimestre_3
-Repositório destinado ao 3º bimestre da formação Certified Tech Developer (CTD) da Digital House.
+
+Repositório destinado ao 3º bimestre (em andamento) da formação Certified Tech Developer (CTD) da Digital House.
 
 <img src="https://media3.giphy.com/media/qUt4xeREPBTEdteWKw/giphy.gif" width="200" style="max-width: 100%;">
 
-**Linguagens:** HTML, CSS, JavaScript e Java (+ Testes com JUnit)
+# Disciplinas e Tecnologias utilizadas:
 
-**Formação:** Certified Tech Developer (Full Stack)
+## Back-end
+- Java
+- MySQL
 
-**Instituição:** Digital House
+## Front-end III
+- JavaScript
+- HTML
+- CSS
+- React
 
-**Bimestre:** 3
+## Infraestrutura
+- Docker
+- AWS
+- Terraform
+- Kubernetes
+
+# Autor
+
+Rodrigo L. de Lima Ferreira
+
+https://www.linkedin.com/in/rllimaferreira/
