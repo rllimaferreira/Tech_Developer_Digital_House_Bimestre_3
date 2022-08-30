@@ -1,31 +1,45 @@
-package br.com.dh.clinica.entities;
+package br.com.dh.clinica.dtos;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+//Service seria a cozinha
+//DentistaRepository é o chefe de cozinha
+//entities são os ingredientes que os chefes usam p. fazer comida (se comunicar com o BD)
+//Dto é o garçom que vai levar a comida
+// O service é o restaurante
+//E nós somos os clientes (controllers)
 
-@Entity
-public class Dentista {
+// repository - chef de cozinha
+// entities ingredientes da comida
+// dto - garçom
+// service - restaurante
+// controller - cliente
 
-//    Determino que essa tabela dentista vai ser criada pelo JPA
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+import br.com.dh.clinica.entities.Dentista;
+
+public class DentistaDto {
+
     private Integer id;
     private String nome;
     private String email;
     private Integer cro;
     private boolean atendeconvenio;
 
-    public Dentista() {
+    public DentistaDto() {
     }
 
-    public Dentista(Integer id, String nome, String email, Integer cro, Boolean atendeconvenio) {
+    public DentistaDto(Integer id, String nome, String email, Integer cro, boolean atendeconvenio) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.cro = cro;
         this.atendeconvenio = atendeconvenio;
+    }
+
+    public DentistaDto(Dentista dentista) {
+        this.id = dentista.getId();
+        this.nome = dentista.getNome();
+        this.email = dentista.getEmail();
+        this.cro = dentista.getCro();
+        this.atendeconvenio = dentista.isAtendeconvenio();
     }
 
     public Integer getId() {
